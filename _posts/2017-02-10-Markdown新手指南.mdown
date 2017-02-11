@@ -1,0 +1,53 @@
+# Markdown 新手指南
+##标题
+这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。
+而在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：
+> # 一级标题
+> ## 二级标题
+> ### 三级标题
+> #### 四级标题
+> ##### 五级标题
+> ###### 六级标题
+
+##列表
+###无序列表
+无序列表只需要在文字前面加上 - 就可以了，例如：
+> - 文本1
+- 文本2
+- 文本3
+
+###有序列表
+在文字前面加上 1. 2. 3. 就可以了，例如：
+> 1. 文本1
+2. 文本2
+3. 文本3
+
+注：-、1.和文本之间要保留一个字符的空格。
+
+![](http://upload-images.jianshu.io/upload_images/259-8ccbfed8ce487368.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##链接和图片
+###链接
+插入链接只需要使用 [显示文本](链接地址) 这样的语法即可，例如：
+> [MUMU](http://www.mumu0934.cn)
+
+###图片
+插入图片使用 ![](图片链接地址) 这样的语法即可
+注：插入图片的语法和链接的语法很像，只是前面多了一个 ！。
+插入链接和图片的案例截图：
+![](http://upload-images.jianshu.io/upload_images/259-90ac0f366310f464.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##引用
+在你希望引用的文字前面加上 > 就好了，例如：
+> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
+
+注：> 和文本之间要保留一个字符的空格。
+##粗体和斜体
+![](http://upload-images.jianshu.io/upload_images/259-6a74e417a86ac97f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##代码引用
+如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。
+如果引用的语句为多行，可以将```置于这段代码的首行和末行。
+代码引用的案例截图：
+![](http://upload-images.jianshu.io/upload_images/259-dcf737a97e71cd73.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##表格
+相关代码：
+![](http://upload-images.jianshu.io/upload_images/4697920-4f428090b72c4536.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://upload-images.jianshu.io/upload_images/4697920-204a250527bc96f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
