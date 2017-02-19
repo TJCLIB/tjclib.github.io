@@ -4,7 +4,7 @@ title:      使用Sublime Text 3 编辑写作Markdown文件
 subtitle:   Sublime写Markdown
 date:       2017-02-18
 author:     凩茻MUMU
-header-img: img/post_bg_debug.jpg  
+header-img: img/post_bg_debug.png    
 catalog: true   
 tags:                           
     - Sublime
