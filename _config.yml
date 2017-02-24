@@ -19,7 +19,6 @@ sidebar-avatar: img/headerpic.jpg      # use absolute URL, seeing it's used in b
 # SNS settings
 RSS: false
 weibo_username:     weizhengning
-#zhihu_username:     qiubaiying
 github_username:    mumu0934
 facebook_username:  mumu0934
 jianshu_username:   mumu0934
@@ -58,9 +57,9 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-#duoshuo_username: qiubaiying
+duoshuo_username: mumu0934
 # Share component is depend on Comment so we can NOT use share only.
-#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
