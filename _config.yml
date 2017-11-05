@@ -1,11 +1,11 @@
 # Site settings
-title: MUMU Blog
-SEOTitle: 凩茻MUMU的博客 | MUMU Blog
+title: Airmole Blog
+SEOTitle: Airmole的博客 | Airmole Blog
 header-img: img/microsoftpage_beauty.png
-email: admin@mumu0934.cn
+email: admin@airmole.cn
 description: "每个胜利背后都有许多尝试"
-keyword: "MUMU, BY MUMU, 凩茻MUMU的博客, MUMU"
-url: "https://mumu0934.github.io"          # your host, for absolute URL
+keyword: "Airmole,MUMU, BY MUMU, 凩茻MUMU的博客, MUMU"
+url: "https://airmole.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -19,10 +19,10 @@ sidebar-avatar: /img/headerpic.jpg      # use absolute URL, seeing it's used in 
 # SNS settings
 RSS: false
 weibo_username:     weizhengning
-github_username:    mumu0934
-facebook_username:  mumu0934
-jianshu_username:   mumu0934
-twitter_username:   mumu0934
+github_username:    airmole
+facebook_username:  airmolecheung
+jianshu_username:   airmole
+twitter_username:   airmolecheung
 
 
 
