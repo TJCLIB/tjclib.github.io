@@ -12,23 +12,37 @@ tags:
     - 前端
     - JavaScript
 ---
+
 别人今天都过情人节，我自己一个人在学习诶~🙃
+
 我骄傲~！
+
 # 下拉刷新
+
 实现下拉刷新目前应该有两种实现方式：
+
  - 调用系统的API，系统有提供下拉刷新的API接口
+
  - 监听scroll-view,自定义下拉刷新
+
 微信官方提供了API当然还是比较方便的，直接拿来用是最简便的选择,所以先来看一下onPullDownRefresh处理函数。
+
 ## 1.onPullDownRefresh函数实现下拉刷新
+
 ![微信小程序官方文档onPullDownRefresh](http://upload-images.jianshu.io/upload_images/4697920-3ddacae71aa0f30d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 微信小程序官方文档的onPullDownRefresh函数原文介绍：[原文链接](https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html#wxstoppulldownrefresh)
+
  - 首先在相应页面的.json文件中启用下拉刷新配置（当然，要整个应用全局都支持下拉刷新的话写入app.json中即可。）
+
 ```
 {
   "enablePullDownRefresh": true,
 }
 ```
+
  - 在相应页面的.js文件中加入以下代码：
+
 ```
 Page({
   onPullDownRefresh: function () {
@@ -43,23 +57,42 @@ Page({
 })
 //嘿嘿嘿，伪刷新。实质上没有重新发送网络请求。
 ```
+
 到了这里如果你都是按照正确操作来的话，效果应该就是这样：
+
 ![刷新效果](http://upload-images.jianshu.io/upload_images/1750086-a3a8482a546e6b9a.gif)
+
 但是其实还是有点小问题，其实最终的下来刷新效果应该是下面这样的，这才是我们想要的：
+
 ![最终的下来刷新效果](http://upload-images.jianshu.io/upload_images/1750086-e976363ba7c0eb49.gif)
+
 看到没？有木有？还有三个小白点呢。。那为什么刚才看不到？
+
 因为刚才页面的背景色默认是白色的，而小白点也是白色的，所以当然看不到咯。只要把当前页面的背景色修改成非白色就可以看到小白点咯。建议修改成和navigationBar一样的颜色效果比较好一点。是不是一下就有感觉了，有木有！
+
 ## 2.监听scroll-view,自定义下拉刷新
+
 ![微信小程序官方文档scroll-view](http://upload-images.jianshu.io/upload_images/4697920-d265a1fde2da1aa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 微信小程序官方文档的scroll-view函数原文介绍：[原文链接](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)
+
 如上图所示，看到没？当滚动到顶部/左边，会触发 scrolltoupper 事件，利用这个特性也可以实现下拉刷新功能。详细代码和第一种方法也是大同小异，利用好 scrolltoupper 事件以及上面执行的动画效果的代码即可。
+
 # 加载更多
+
 类似于下拉刷新一样，加载更多其实就是上拉到底啊。所以也是有对应的两种方法。
+
  - 调用系统的onReachBottom API实现上拉到底加载更多
+
  - 监听scroll-view，bindscrolltolower滑动到底部的监听
+
 ## 1.调用系统的onReachBottom API实现上拉到底加载更多
+
 在相应页面的.js文件里加入onReachBottom函数，并让onReachBottom函数控制相应view的hidden属性的值即可实现。
+
 ## 2. 监听scroll-view，bindscrolltolower滑动到底部的监听
+
 滚动到底部/右边，会触发 scrolltolower 事件。。。不再赘述。
+
 实在开始没看懂的建议反复仔细揣摩源码理解每行代码的含义。也可以联系我交流。
+
 最后再说下，微信小程序这个的文档很简单，也讲的很清楚很详细。仔细看基本上都能看懂的。我个人感觉小程序的开发比公众号的开发还要简单。
