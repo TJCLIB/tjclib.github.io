@@ -1,28 +1,28 @@
 # Site settings
-title: Airmole Blog
-SEOTitle: Airmole的博客 | Airmole Blog
-header-img: img/photo-moutain.jpg
-email: admin@airmole.cn
-description: "每个胜利背后都有许多尝试"
-keyword: "Airmole,MUMU,BY MUMU,凩茻MUMU的博客,MUMU,Airmole Cheung"
-url: "https://airmole.github.io"          # your host, for absolute URL
+title: 悦图书推荐
+SEOTitle: 悦图书推荐
+header-img: img/book_andBookbucket.jpg
+email: 285463250@qq.com
+description: ""
+keyword: "悦图书推荐"
+url: "https://tjclib.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "It takes a great man <br> to be a good instener"
-sidebar-avatar: /img/headerpic.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "悦图书推荐"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     weizhengning
-github_username:    airmole
-facebook_username:  airmolecheung
-jianshu_username:   airmole
-twitter_username:   airmolecheung
+weibo_username:
+github_username:    tjclib
+facebook_username:
+jianshu_username:
+twitter_username:
 
 
 
@@ -66,11 +66,11 @@ kramdown:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 620ab3d6ff9897dcb94f97b4875ef48f
+ba_track_id:
 
 
 # Google Analytics
-ga_track_id: 'UA-92005838-1'            # Format: UA-xxxxxx-xx
+ga_track_id:          # Format: UA-xxxxxx-xx
 ga_domain: auto
 
 
